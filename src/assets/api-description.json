@@ -1,0 +1,31 @@
+{
+    "api": [
+        {
+            "endPoint": "/",
+            "method": "GET",
+            "status": 200,
+            "response": {
+                "message": "Is ok!"
+            } 
+        },
+        {
+            "endPoint": "/do500",
+            "method": "GET",
+            "status": 500,
+            "response": {
+                "message": "Server error"
+            }
+        },
+        {
+            "endPoint": "/sample-with-parameters/:param1/:param2/:param3",
+            "method": "GET",
+            "status": 200,
+            "response": {
+                "message": "Sample message",
+                "param1": "*",
+                "param2": "*",
+                "param3": "*"
+            }
+        }
+    ]
+}
